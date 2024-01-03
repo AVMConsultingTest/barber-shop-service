@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.root = void 0;
+const express_1 = require("express");
+const appointment_1 = require("./appointment");
+const squarePayment_1 = require("./squarePayment");
+const s3Bucket_1 = require("./s3Bucket");
+exports.root = (0, express_1.Router)();
+exports.root.use("/appointment", appointment_1.appointmentRouter);
+exports.root.use('/payment', squarePayment_1.squarePaymentRouter);
+exports.root.use('/s3Bucket', s3Bucket_1.s3BucketRouter);
