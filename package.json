@@ -25,7 +25,7 @@
     "pug": "^3.0.2",
     "reflect-metadata": "^0.1.13",
     "sequelize": "^6.33.0",
-    "sequelize-typescript": "^2.1.5",
+    "sequelize-typescript": "^2.1.6",
     "square": "^22.0.0",
     "uuid": "^8.3.0"
   },
